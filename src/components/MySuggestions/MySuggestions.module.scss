@@ -1,0 +1,16 @@
+.suggestions {
+    position: relative;
+    &.sticky {
+        mask-image: linear-gradient(to top, black 90%, transparent);
+        transition: mask-image .3s ease;
+    }
+    h2 {
+        margin-bottom: var(--spacer-small);
+    }
+    .suggestions-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacer-small);
+    }
+}

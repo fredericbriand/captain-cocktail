@@ -1,0 +1,43 @@
+.cocktail-trending {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--spacer-small);
+	padding: var(--spacer-medium);
+	border-radius: 25px;
+	backdrop-filter: blur(12px);
+	background: linear-gradient(
+		150deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0.03)
+	);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.cocktail-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.cocktail-name {
+	margin-bottom: 3px;
+}
+
+.cocktail-tagline {
+	color: var(--grey-light);
+	font-size: small;
+	margin-bottom: var(--spacer-small);
+}
+
+.btn-recipe {
+	color: white;
+}
+
+.cocktail-img {
+	flex-shrink: 0;
+	height: 135px;
+	width: auto;
+	object-fit: contain;
+}
+

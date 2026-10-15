@@ -1,0 +1,60 @@
+{
+    "cocktail": "Cocktail",
+    "bar": {
+        "title": "Mon Bar",
+        "howTo": {
+            "title": "Comment ça marche?",
+            "steps": [
+                {
+                    "id": "add",
+                    "line1": "Ajoute des ingrédients",
+                    "line2": "à ton bar"
+                },
+                {
+                    "id": "discover",
+                    "line1": "Découvre les cocktails",
+                    "line2": "que tu peux réaliser"
+                },
+                {
+                    "id": "explore",
+                    "line1": "Explore nos suggestions",
+                    "line2": "et ce qu'il te manque"
+                },
+                {
+                    "id": "click",
+                    "line1": "Clique sur un cocktail",
+                    "line2": "pour voir la recette"
+                }
+            ]
+        },
+        "search": {
+            "select": "Rechercher des ingrédients",
+            "clear": "Effacer la recherche"
+        },
+        "dropdown": {
+            "results": "Résultats • A→Z",
+            "add": "Ajouter l'ingrédient",
+            "noIngredientFound": "Aucun ingrédient trouvé",
+            "noResult": "Aucun résultat pour « {search} ».",
+            "noResultHint": "Vérifiez l'orthographe ou essayez un autre terme."
+        },
+        "myIngredients": {
+            "title": "Mon bar •",
+            "empty": "Vider le bar",
+            "remove": "Supprimer"
+        },
+        "mySuggestions": {
+            "title": "Cocktails suggérés •"
+        },
+        "cocktailSuggestion": {
+            "doable": "Réalisable",
+            "missingIngredient": "Manque : {missingCount}",
+            "favorite": "Ajouter aux favoris"
+        },
+        "ingredient": "ingrédient",
+        "ingredients": "ingrédients"
+    },
+    "details": {
+        "toPlan": "À prévoir"
+    }
+}

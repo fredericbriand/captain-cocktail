@@ -1,0 +1,52 @@
+@use '../../styles/components' as *;
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacer-small);
+
+    > li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        border-radius: var(--radius);
+        border: 1px solid var(--white-alpha);
+        font-size: .9rem;
+        @extend .simple-glassmorphism;
+        padding: 5px var(--spacer-small);
+
+        .full {
+            grid-column: span 2;
+        }
+    
+        .type {
+            color: var(--white-alpha);
+        }
+    }
+
+
+    .property {
+        font-size: .9rem;
+    }
+    .tags-box {
+        grid-column: span 2;
+        margin: var(--spacer-small) 0;
+        margin-bottom: var(--spacer-large);
+        .type-tags {
+            text-align: center;
+        }
+        .tags-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+            
+        li {
+            @extend .simple-glassmorphism;
+            border-radius: var(--radius);
+            padding: 2px var(--spacer-small);
+        }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@use '../../../styles/components' as *;
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    @extend .round-button;
+}

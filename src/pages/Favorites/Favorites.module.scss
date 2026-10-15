@@ -1,0 +1,45 @@
+@use '../../styles/media-queries.scss' as *;
+
+/* ======== ECRAN COMPLET =========*/
+:global(body) {
+  margin: 0;
+  background-image: url('/assets/images/background-pages.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+
+/* ======== HEADER =========*/
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin: 30px 0 0 0;
+  padding: 0 var(--spacer-medium);
+}
+
+/* ======== CARDS =========*/
+
+.numbers {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 var(--spacer-medium);
+  margin: 6px 0 0 0;
+}
+
+/* ======== PAGINATION =========*/
+
+.pagination {
+  @include landscape {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.error {
+  text-align: center;
+}

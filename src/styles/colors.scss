@@ -1,0 +1,29 @@
+// ----- COLOR VARIABLES ---- //
+:root {
+    --primary: #FF9A3C;
+    --primary-light: color-mix(in srgb, var(--primary) 50%, white);
+    --primary-dark: color-mix(in srgb, var(--primary) 50%, black);
+
+    --secondary: #FF4DB6;
+    --secondary-light: color-mix(in srgb, var(--secondary) 50%, white);
+    --secondary-dark: color-mix(in srgb, var(--secondary) 50%, black);
+
+    --tertiary: #00E5D4;
+    --tertiary-light: color-mix(in srgb, var(--tertiary) 50%, white);
+    --tertiary-dark: color-mix(in srgb, var(--tertiary) 50%, black);
+
+    --done: #34F39D;
+    --done-light: color-mix(in srgb, var(--done) 50%, white);
+    --done-dark: color-mix(in srgb, var(--done) 50%, black);
+
+    --warning: #f8d641;
+    --warning-light: color-mix(in srgb, var(--warning) 50%, white);
+    --warning-dark: color-mix(in srgb, var(--warning) 50%, black);
+
+    --background: #080E1A;
+    --background2: #1A1033;
+
+    --grey-light: #cecece;
+    --grey-medium: #858585;
+    --white-alpha: color-mix(in srgb, white 70%, transparent);
+}

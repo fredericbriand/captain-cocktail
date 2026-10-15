@@ -1,0 +1,60 @@
+@use '../../styles/components' as *;
+
+.search {
+    position: sticky;
+    top: 10px;
+    padding: var(--spacer-medium) 0;
+    z-index: 10;
+    > div {
+        position: relative;
+        border-radius: 15px;
+        @extend .full-glassmorphism;
+        &:has(input:focus) {
+            i svg path {
+                stroke: var(--tertiary);
+                fill: var(--tertiary);
+            }
+            input {
+                @extend .neon-glow-secondary;
+            }
+        }
+        i {
+            position: absolute;
+            line-height: 0;
+            top: 50%;
+            translate: 0 -50%;
+        }
+        i.search {
+            left: 15px;
+            svg path {
+                stroke: var(--secondary);
+                stroke-width: 1px;
+                fill: var(--secondary);
+            }
+        }
+        i.cross {
+            right: 15px;
+            svg path {
+                stroke: var(--tertiary);
+                stroke-width: 1px;
+                fill: var(--tertiary);
+            }
+        }
+        input {
+            width: 100%;
+            min-height: 46px;
+            border: 1px solid var(--secondary);
+            border-radius: var(--radius);
+            background-color: transparent;
+            color: white;
+            caret-color: var(--tertiary);
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            padding: var(--spacer-small) var(--spacer-medium) var(--spacer-small) 40px;
+            @extend .neon-secondary;
+            &::placeholder {
+                color: var(--secondary-light)
+            }
+        }
+    }
+}

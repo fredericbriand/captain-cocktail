@@ -1,0 +1,60 @@
+{
+    "cocktail": "Cocktail",
+    "bar": {
+        "title": "My Bar",
+        "howTo": {
+            "title": "How does it work?",
+            "steps": [
+                {
+                    "id": "add",
+                    "line1": "Add ingredients",
+                    "line2": "to your bar"
+                },
+                {
+                    "id": "discover",
+                    "line1": "Discover cocktails",
+                    "line2": "you can make"
+                },
+                {
+                    "id": "explore",
+                    "line1": "Explore our suggestions",
+                    "line2": "and what you're missing"
+                },
+                {
+                    "id": "click",
+                    "line1": "Click on a cocktail",
+                    "line2": "to view the recipe"
+                }
+            ]
+        },
+        "search": {
+            "select": "Search ingredients",
+            "clear": "Clear search"
+        },
+        "dropdown": {
+            "results": "Results • A→Z",
+            "add": "Add ingredient",
+            "noIngredientFound": "No ingredient found",
+            "noResult": "No results for « {search} ».",
+            "noResultHint": "Check the spelling or try another term."
+        },
+        "myIngredients": {
+            "title": "My bar •",
+            "empty": "Clear bar",
+            "remove": "Remove"
+        },
+        "mySuggestions": {
+            "title": "Suggested cocktails •"
+        },
+        "cocktailSuggestion": {
+            "doable": "Doable",
+            "missingIngredient": "Missing: {missingCount}",
+            "favorite": "Add to favorite"
+        },
+        "ingredient": "ingredient",
+        "ingredients": "ingredients"
+    },
+    "details": {
+        "toPlan": "To plan"
+    }
+}

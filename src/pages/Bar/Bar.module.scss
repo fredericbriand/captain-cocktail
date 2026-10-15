@@ -1,0 +1,92 @@
+@use '../../styles/components' as *;
+
+.page {
+    padding: var(--spacer-large);
+    .title {
+        span {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px var(--secondary));
+        }
+        i {
+            margin-left: var(--spacer-small);
+            svg {
+                width: 2rem;
+                height: 2rem;
+                path {
+                    fill: var(--tertiary-light);
+                    filter: drop-shadow(0 0 10px var(--tertiary));               
+                }
+            }
+        }
+    }
+    .how-to {
+        border-radius: var(--radius);
+        text-align: center;
+        padding: var(--spacer-medium) var(--spacer-large);
+        @extend .full-glassmorphism;
+        h3 {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-size: 1.3rem;
+            color: var(--secondary-light);
+            margin-bottom: var(--spacer-medium);
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacer-medium);
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: var(--spacer-medium);
+                &.add > span {
+                    color: var(--primary);
+                    @extend .neon-primary;
+                }
+                &.discover > span {
+                    color: var(--secondary);
+                    @extend .neon-secondary;
+                }
+                &.explore > span {
+                    color: var(--tertiary);
+                    @extend .neon-tertiary;
+                }
+                &.click > span {
+                    color: var(--done);
+                    @extend .neon-done;
+                }
+                > span {
+                    min-width: 36px;
+                    height: 36px;
+                    font-weight: 500;
+                    border: 1px solid currentColor;
+                    border-radius: 50%;
+                    line-height: 36px;
+                }
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    span {
+                        line-height: 1.1rem;
+                        font-weight: 600;
+                    }
+                    span + span {
+                        font-size: .8rem;
+                        font-weight: 500;
+                        color: var(--white-alpha);
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        position: relative;
+    }
+}

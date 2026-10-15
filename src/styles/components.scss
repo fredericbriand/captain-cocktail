@@ -1,0 +1,90 @@
+@use './animations.scss';
+
+// ----- UI COMPONENTS ---- //
+
+$neon-colors: (
+  'primary':   var(--primary-dark),
+  'secondary': var(--secondary-dark),
+  'tertiary':  var(--tertiary-dark),
+  'done':  var(--done-dark),
+  'warning':  var(--warning-dark),
+);
+
+@each $name, $color in $neon-colors {
+  @keyframes neon-glow-#{$name} {
+    from { box-shadow: 0 0 10px 0 $color; }
+    to   { box-shadow: 0 0 10px 5px $color; }
+  }
+
+  .neon-#{$name} {
+    box-shadow: 0 0 10px 0 $color;
+  }
+  .neon-glow-#{$name} {
+    animation: neon-glow-#{$name} 1s ease infinite alternate;
+  }
+}
+
+
+.simple-glassmorphism {
+    background: rgba(224, 242, 254, 0.1);
+    backdrop-filter: blur(12px) saturate(120%);
+    -webkit-backdrop-filter: blur(12px) saturate(120%);
+}
+
+.full-glassmorphism {
+    background: rgba(224, 242, 254, 0.1);
+    backdrop-filter: blur(12px) saturate(120%);
+    -webkit-backdrop-filter: blur(12px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 8px 24px 0 rgba(12, 74, 110, 0.15),
+        inset 0px 0px 4px 0 rgba(255, 255, 255, 0.2);
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-radius: inherit;
+        z-index: 1;
+    }
+    &:before {
+        background: linear-gradient(to left top, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%);
+    }
+    &:after {
+        background: linear-gradient(to bottom, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+
+.pink-button {
+    background: linear-gradient(to right, var(--secondary) 0%, var(--primary) 100%);
+    border-radius: 40px;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0px 0px 21px -3px var(--secondary);
+    padding: var(--spacer-small) var(--spacer-medium);
+    cursor: pointer;
+}
+
+.round-button {
+    width: 42px;
+    height: 42px;
+    background-color: var(--background);
+    border: 1px solid var(--white-alpha);
+    border-radius: 50%;
+    padding-top: 5px;
+    &.is-active {
+        border-color: var(--secondary);
+        animation: thumb-pop .3s ease 1;
+        svg path {
+            fill: var(--secondary);
+            stroke: var(--secondary);
+        }
+    }
+    svg path {
+        stroke-width: 2px;
+        fill: white;
+        stroke: white;
+    }
+}

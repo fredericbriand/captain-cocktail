@@ -1,0 +1,13 @@
+@use '../../styles/media-queries.scss' as *;
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--spacer-medium);
+	padding: var(--spacer-medium);
+	
+	@include landscape {
+        	grid-template-columns: repeat(6, 1fr);
+    }
+}
+

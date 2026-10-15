@@ -4,9 +4,9 @@
     "ignore": ["*.js", "**/dist/*", "**/*.template.*", "*.config.*", "**/tsconfig.json", "coverage"]
   },
   "formatter": {
-			"ignore": ["*.json", "*.js", "*.*.js", "*.html"],
-			"indentStyle": "tab"
-		},
+		"ignore": ["*.json", "*.js", "*.*.js", "*.html"],
+		"indentStyle": "tab"
+	},
   "organizeImports": { "enabled": true },
   "linter": {
     "enabled": true,

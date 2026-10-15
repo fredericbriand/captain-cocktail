@@ -1,0 +1,174 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--spacer-medium);
+    font-family: poppins;
+
+    h2 {
+    color: var(--primary);
+    font-size: medium;
+    }
+
+    .logo {
+        width: 200px;
+        margin-top: var(--spacer-large);
+        margin-bottom: var(--spacer-medium);
+        align-self: center;
+    }
+
+    .presentation {
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: var(--spacer-medium);
+    }
+
+    article.glass-morphed {
+        padding: var(--spacer-large) var(--spacer-small);
+        backdrop-filter: blur(12px);
+        background: linear-gradient(150deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));         
+        border-radius: 25px;
+        margin: var(--spacer-small);
+        border: 1px solid rgba(255, 255, 255, 0.14); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        i {
+            margin-bottom: var(--spacer-small);
+            svg {
+                width: 80px;
+                height: 80px;
+                background-color: var(--background2);
+                border-radius: 20%;
+                padding: 15px;
+
+                path {
+                    fill: var(--primary);
+                }
+            }
+        }
+
+        h2 {
+            margin-bottom: var(--spacer-small);
+        }
+        
+        p {
+            margin: var(--spacer-small);
+            font-size: 0.9rem;
+            text-align: center;
+            color: var(--grey-light);
+        }
+
+        .add-ingredients {
+            width: 100%;
+            margin: var(--spacer-small) 0;
+        }
+
+        p.fast-free {
+           font-size: 0.8rem;
+           margin-bottom: 0%;
+        }
+    }
+
+    article.moment {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin: var(--spacer-small);
+    }
+
+    article.all-cocktails {
+        backdrop-filter: blur(12px);
+        background: linear-gradient(150deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));         
+        border-radius: 25px;
+        margin: var(--spacer-small);
+        border: 1px solid rgba(255, 255, 255, 0.14); 
+        padding: var(--spacer-medium);
+
+        h3 {
+            margin-bottom: 3px;
+        }
+
+        p {
+            color: var(--grey-light);
+            font-size: small;
+            margin-bottom: var(--spacer-small);
+        }
+
+        button.browse-all {
+            display: inline-flex;
+            align-items: center;
+            backdrop-filter: blur(12px);
+            background: linear-gradient(150deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));         
+            border-radius: 20px;
+            margin: var(--spacer-small);
+            border: 1px solid var(--tertiary); 
+            padding: var(--spacer-small) var(--spacer-medium);
+            font-weight: 600;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: var(--spacer-small);
+            }
+
+            i {
+                display: flex;
+                align-items: center;
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                    path {
+                        fill: var(--tertiary);
+                    }
+                }
+            }
+        }
+    }
+
+    .cocktail-favorites {
+        padding: var(--spacer-medium);
+        .favorites {
+        display: flex;
+        justify-content: space-between;
+        }
+    }
+}
+
+.cocktail-favorites {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacer-medium);
+
+    .favorites {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+
+        }
+    }
+}
+
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); // S'adapte sur mobile et écran large
+    gap: var(--spacer-medium);
+    width: 100%;
+}
+
+.loading, .no-favorites {
+    color: var(--grey-light);
+    text-align: center;
+    width: 100%;
+    padding: var(--spacer-medium) 0;
+    font-style: italic;
+}

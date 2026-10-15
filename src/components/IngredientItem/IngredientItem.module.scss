@@ -1,0 +1,52 @@
+.ingr-and-measure{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: var(--spacer-small);
+    
+    .status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background-color: var(--background);
+        border: 1px solid;
+        border-radius: 50%;
+        padding-top: 5px;
+        &.owned {
+            border-color: var(--done);
+            svg path {
+                fill: var(--done);
+                stroke: var(--done);
+            }
+        }
+        &.missing {
+            border-color: var(--secondary);
+            svg path {
+                fill: var(--secondary);
+                stroke: var(--secondary);
+            }
+        }
+        svg path {
+            stroke-width: 2px;
+        }
+    }
+
+    > p {
+        display: flex;
+        color: white;
+        font-size: .8rem;
+    }
+
+    .badge {
+        white-space: nowrap;
+        font-size: .6rem;
+        color: var(--secondary-light);
+        border: 1px solid var(--secondary);
+        border-radius: 30px;
+        padding: 2px 8px;
+        margin-left: auto;
+    }
+
+}

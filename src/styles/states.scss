@@ -1,0 +1,13 @@
+// ----- STATES OVERRIDES ---- //
+.status-green {
+    color: var(--done);
+}
+.status-yellow {
+    color: var(--warning);
+}
+.status-orange {
+    color: var(--primary);
+}
+.status-red {
+    color: var(--secondary);
+}

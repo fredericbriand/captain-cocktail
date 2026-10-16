@@ -4,7 +4,16 @@ Tells you what you can actually make from the bottles you already have.
 Add your ingredients, and the app ranks every cocktail by how far you are
 from being able to pour it.
 
-![Captain Cocktail — my bar](docs/screenshots/bar.png)
+<p align="center">
+  <img src="docs/screenshots/bar.png" alt="Captain Cocktail — my bar" width="32%">
+  <img src="docs/screenshots/cocktails.png" alt="Ranked suggestions" width="32%">
+  <img src="docs/screenshots/details.png" alt="Cocktail details" width="32%">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/home.png" alt="Home" width="32%">
+  <img src="docs/screenshots/favorites.png" alt="Favourites" width="32%">
+</p>
 
 ## Why
 

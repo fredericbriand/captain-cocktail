@@ -1,6 +1,5 @@
-import type { ReactNode } from "react";
 import { createContext, useContext, useState } from "react";
-import type { SortContextType } from "../../types/types";
+import type { SortContextType } from "../types/types";
 
 const SortContext = createContext<SortContextType | undefined>(undefined);
 

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import sortIcon from "../../assets/icons/sort.svg";
 import { API_BASE } from "../../config";
 import { useSort } from "../../contexts/SortContext";
 import type { Category, SearchBarProps } from "../../types/types";
